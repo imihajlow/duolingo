@@ -5,4 +5,4 @@ Images are designed by Freepik (http://www.freepik.com).
 
 # Installation
 
-Please use GreaseMonkey extension to install this script.
+Please use Tampermonkey extension to install this script.
