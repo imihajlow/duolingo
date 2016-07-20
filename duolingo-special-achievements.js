@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Duolingo achievements
-// @namespace    http://imihajlow.github.io/
-// @version      1.0
+// @namespace    http://github.com/imihajlow/duolingo
+// @version      1.1
 // @updateURL    https://imihajlow.github.io/duolingo/duolingo-special-achievements.js
 // @downloadURL  https://imihajlow.github.io/duolingo/duolingo-special-achievements.js
 // @description  Add special achievements to Duolingo.
