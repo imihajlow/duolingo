@@ -12,6 +12,7 @@
 // @resource     hedgehog https://imihajlow.github.io/duolingo/img/hedgehog.svg
 // @resource     hare https://imihajlow.github.io/duolingo/img/hare.svg
 // @resource     elephant https://imihajlow.github.io/duolingo/img/elephant.svg
+// @resource     tortoise https://imihajlow.github.io/duolingo/img/tortoise.svg
 // ==/UserScript==
 
 (function() {
@@ -30,9 +31,12 @@
         } else if (streak < 120) {
             days = 90;
             url = GM_getResourceURL("hare", "");
-        } else {
+        } else if (streak < 150) {
             days = 120;
             url = GM_getResourceURL("elephant", "");
+        } else {
+            days = 150;
+            url = GM_getResourceURL("tortoise", "");
         }
         return {
             "days" : days,
