@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Duolingo achievements
 // @namespace    http://github.com/imihajlow/duolingo
-// @version      1.4
+// @version      1.5
 // @updateURL    https://imihajlow.github.io/duolingo/duolingo-special-achievements.js
 // @downloadURL  https://imihajlow.github.io/duolingo/duolingo-special-achievements.js
 // @description  Add special achievements to Duolingo.
@@ -39,7 +39,7 @@
             days = 150;
             url = GM_getResourceURL("tortoise", "");
         } else {
-            days = 150;
+            days = 180;
             url = GM_getResourceURL("tree", "");
         }
         return {
