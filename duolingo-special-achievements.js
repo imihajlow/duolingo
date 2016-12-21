@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Duolingo achievements
 // @namespace    http://github.com/imihajlow/duolingo
-// @version      1.3
+// @version      1.4
 // @updateURL    https://imihajlow.github.io/duolingo/duolingo-special-achievements.js
 // @downloadURL  https://imihajlow.github.io/duolingo/duolingo-special-achievements.js
 // @description  Add special achievements to Duolingo.
@@ -13,6 +13,7 @@
 // @resource     hare https://imihajlow.github.io/duolingo/img/hare.svg
 // @resource     elephant https://imihajlow.github.io/duolingo/img/elephant.svg
 // @resource     tortoise https://imihajlow.github.io/duolingo/img/tortoise.svg
+// @resource     tree https://imihajlow.github.io/duolingo/img/tree.svg
 // ==/UserScript==
 
 (function() {
@@ -34,9 +35,12 @@
         } else if (streak < 150) {
             days = 120;
             url = GM_getResourceURL("elephant", "");
-        } else {
+        } else if (streak < 180) {
             days = 150;
             url = GM_getResourceURL("tortoise", "");
+        } else {
+            days = 150;
+            url = GM_getResourceURL("tree", "");
         }
         return {
             "days" : days,
